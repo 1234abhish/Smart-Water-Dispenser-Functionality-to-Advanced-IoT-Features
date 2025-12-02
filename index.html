@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Abhishek L Portfolio | Smart Water Dispenser IoT</title>
+
+<style>
+    body {
+        margin: 0;
+        font-family: "Poppins", sans-serif;
+        background: #f5f7fb;
+        color: #222;
+    }
+
+    header {
+        background: linear-gradient(135deg, #004aad, #0073ff);
+        color: white;
+        text-align: center;
+        padding: 60px 20px;
+        border-bottom-left-radius: 60px;
+        border-bottom-right-radius: 60px;
+    }
+
+    header h1 {
+        margin: 0;
+        font-size: 40px;
+        font-weight: 700;
+    }
+
+    header h3 {
+        margin-top: 10px;
+        font-size: 20px;
+        font-weight: 300;
+    }
+
+    section {
+        padding: 50px 10%;
+    }
+
+    h2 {
+        color: #004aad;
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+
+    .card {
+        background: white;
+        padding: 25px;
+        margin-top: 20px;
+        border-radius: 15px;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+        line-height: 1.7;
+    }
+
+    ul { padding-left: 20px; }
+    li { margin-bottom: 8px; }
+
+    .components-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 15px;
+        margin-top: 20px;
+    }
+
+    .comp-item {
+        background: #fff;
+        padding: 18px;
+        border-radius: 12px;
+        text-align: center;
+        font-weight: 600;
+        color: #004aad;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+    }
+
+    footer {
+        text-align: center;
+        padding: 30px;
+        background: #004aad;
+        color: white;
+        margin-top: 40px;
+    }
+
+    .tagline {
+        font-size: 18px;
+        margin-top: 10px;
+        opacity: 0.9;
+    }
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Abhishek L</h1>
+    <h3>ECE | 7th Semester | USN: 3BR22EC003</h3>
+    <p class="tagline">Hardware Developer | IoT & Embedded Systems</p>
+</header>
+
+<section>
+    <h2>📘 Project Title</h2>
+    <div class="card">
+        <strong>“Smart Water Dispenser Functionality to Advanced IoT Features”</strong>
+        <p>
+        A cloud-connected IoT water management system that automates pumping, monitors water quality, 
+        measures flow, tracks daily usage, and ensures safety using advanced sensors and hardware logic.
+        </p>
+    </div>
+</section>
+
+<section>
+    <h2>🎯 My Role: Hardware Developer</h2>
+    <div class="card">
+        <ul>
+            <li>Designed complete hardware architecture</li>
+            <li>Sensor calibration (TDS, Flow, Ultrasonic, ACS712, Voltage)</li>
+            <li>Relay, pump & solenoid valve control wiring</li>
+            <li>Power supply integration using Hi-Link AC–DC modules</li>
+            <li>Zero PCB soldering, header placement, wiring layout</li>
+            <li>Multimeter-based debugging and electrical testing</li>
+            <li>LCD interface & display formatting (20×4)</li>
+            <li>Ensured safety using fuses, optocouplers & isolation circuits</li>
+        </ul>
+    </div>
+</section>
+
+<section>
+    <h2>🧠 System Features</h2>
+    <div class="card">
+        <ul>
+            <li>Automatic water pump control based on level</li>
+            <li>TDS-based solenoid valve automation</li>
+            <li>Real-time monitoring using ESP32 & Firebase</li>
+            <li>Daily water usage calculation</li>
+            <li>Live LCD display (20×4)</li>
+            <li>Voltage, current & power monitoring</li>
+            <li>Overload & safety protection</li>
+        </ul>
+    </div>
+</section>
+
+<section>
+    <h2>🛠️ Components Used</h2>
+    <div class="components-grid">
+
+        <div class="comp-item">ESP32 Microcontroller × 2</div>
+        <div class="comp-item">LCD Display 20×4 × 2</div>
+        <div class="comp-item">Hi-Link AC–DC Adapter × 4</div>
+        <div class="comp-item">Flow Sensor × 3</div>
+        <div class="comp-item">AC Voltage Sensor × 3</div>
+        <div class="comp-item">AC Current Sensor × 3</div>
+        <div class="comp-item">TDS Sensor × 2</div>
+        <div class="comp-item">Ultrasonic Sensor × 3</div>
+        <div class="comp-item">Water Pump × 2</div>
+        <div class="comp-item">Solenoid Valves × 3</div>
+        <div class="comp-item">Temperature Sensor × 2</div>
+        <div class="comp-item">Zero PCB Boards × 3</div>
+        <div class="comp-item">Female Headers × 12</div>
+        <div class="comp-item">2-Pin Terminal Blocks × 12</div>
+        <div class="comp-item">Optocouplers × 6</div>
+        <div class="comp-item">Transistors × 12</div>
+        <div class="comp-item">Fuses × 2</div>
+        <div class="comp-item">Wires, Soldering Items</div>
+
+    </div>
+</section>
+
+<section>
+    <h2>📡 IoT Cloud Architecture</h2>
+    <div class="card">
+        <pre>
+Sensors → ESP32 → Firebase Cloud
+               ↓
+      Pump / Valves / LCD Output
+        </pre>
+    </div>
+</section>
+
+<section>
+    <h2>📁 Firebase JSON Structure</h2>
+    <div class="card">
+<pre>
+{
+  "WaterLevel": 82.4,
+  "FlowRate": 1.2,
+  "TDS": 240,
+  "Voltage": 224.6,
+  "Current": 0.58,
+  "Power": 130.2,
+  "Temperature": 28.4,
+  "DailyWaterUsed": 22.1,
+  "Pump": "ON",
+  "Valve": "OPEN"
+}
+</pre>
+    </div>
+</section>
+
+<section>
+    <h2>🏆 Summary</h2>
+    <div class="card">
+        This project demonstrates advanced skills in IoT, embedded systems, hardware design, 
+        electronics interfacing, cloud integration, and real-time automation.  
+        As a **Hardware Developer**, I successfully integrated sensors, relays, pumps, 
+        valves, power modules, and ESP32 into a fully functional smart water dispenser system.
+    </div>
+</section>
+
+<footer>
+    <p>Developed by <strong>Abhishek L</strong></p>
+    <p>ECE | Hardware Developer | IoT & Embedded Systems</p>
+</footer>
+
+</body>
+</html>
